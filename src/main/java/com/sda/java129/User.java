@@ -1,20 +1,15 @@
-package com.sda.db;
+package com.sda.java129;
 
 public class User {
     private String login;
     private String password;
 
-    private int expPoints;
-
-    public User(String login, String username) {
-        this.login = login;
-        this.password = username;
+    public User() {
     }
 
-    public User(String login, String password, int expPoints) {
+    public User(String login, String password) {
         this.login = login;
         this.password = password;
-        this.expPoints = expPoints;
     }
 
     public String getLogin() {
@@ -31,13 +26,5 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public int getExpPoints() {
-        return expPoints;
-    }
-
-    public void setExpPoints(int expPoints) {
-        this.expPoints = expPoints;
     }
 }
